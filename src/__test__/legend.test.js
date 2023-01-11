@@ -12,3 +12,7 @@ test('show critical', () => {
   const result = displayLife({ name: 'Ученик', health: 10 });
   expect(result).toBe('critical');
 });
+test('show 0', () => {
+  const result = displayLife({ name: 'Ученик' });
+  expect(result).toBe(0);
+});
